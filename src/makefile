@@ -1,9 +1,9 @@
 SCRIPTS_DIR=../scripts
 BIN_DIR=../bin
 
-CC = gcc
+CC = clang
 #The -Ofast might not work with older versions of gcc; in that case, use -O2
-CFLAGS = -lm -pthread -O2 -Wall -funroll-loops -Wno-unused-result
+CFLAGS = -lm -pthread -O2 -Wall -funroll-loops -Wunused-result
 
 all: word2vec word2phrase distance word-analogy compute-accuracy
 
